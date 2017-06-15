@@ -10,7 +10,7 @@ DEPS += emqttd emq_modules emq_dashboard emq_retainer emq_recon emq_reloader \
         emq_auth_clientid emq_auth_username emq_auth_ldap emq_auth_http \
         emq_auth_mysql emq_auth_pgsql emq_auth_redis emq_auth_mongo \
         emq_sn emq_coap emq_stomp emq_plugin_template emq_web_hook \
-        emq_lua_hook emq_elixir_plugin
+        emq_lua_hook emq_event_store
 
 # emq deps
 dep_emqttd        = git https://github.com/emqtt/emqttd master
@@ -41,11 +41,11 @@ dep_emq_plugin_template = git https://github.com/emqtt/emq-plugin-template maste
 # web_hook lua_hook
 dep_emq_web_hook  = git https://github.com/emqtt/emq-web-hook master
 dep_emq_lua_hook  = git https://github.com/emqtt/emq-lua-hook master
-dep_emq_elixir_plugin = git  https://github.com/emqtt/emq-elixir-plugin master
+dep_emq_event_store = git  https://github.com/127labs/emq-event-store master
 
 # COVER = true
 
-NO_AUTOPATCH = emq_elixir_plugin
+NO_AUTOPATCH = emq_event_store
 
 
 include erlang.mk
