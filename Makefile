@@ -47,7 +47,7 @@ dep_emq_event_store = git https://github.com/127labs/emq-event-store master
 
 # COVER = true
 
-NO_AUTOPATCH = emq_event_store
+# NO_AUTOPATCH = emq_event_store
 
 
 include erlang.mk
